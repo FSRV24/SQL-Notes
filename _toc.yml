@@ -6,13 +6,13 @@ root: intro
 
 parts:
 - caption: I. SQL básico
-  numbered: true
+  # numbered: true
   chapters:
   - file: 1_basico
   - file: 2_ejercicios_basico
   
 - caption: II. SQL avanzando
-  numbered: true
+  # numbered: true
   chapters:
   - file: 3_avanzado
   - file: 4_ejercicios_avanzado
