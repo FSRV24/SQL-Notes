@@ -12,25 +12,23 @@ kernelspec:
   name: python3
 ---
 
-# SQL básico
+# SQL Básico
 
-## SELECT
+## Select
 
 Permite realizar consultas sobre las columnas de una tabla en una base de datos.
 
 **Sintaxis**
 
-````{margin}
-```{tip}
-Si se utiliza `*` en lugar del nombre de alguna(s) columna(s), entonces se devuelven todos los atributos de la tabla.
-```
-````
-
 ```sql
 SELECT [col1, col2, ...] FROM [table_name]
 ```
 
-## DISTINCT
+```{tip}
+Si se utiliza `*` en lugar del nombre de alguna(s) columna(s), entonces se devuelven todos los atributos de la tabla.
+```
+
+## Distinct
 
 Se utiliza para devolver valores únicos.
 
@@ -44,7 +42,7 @@ SELECT [DISTINCT col1, col2, DISTINCT col3] FROM [table_name]
 En pandas se emplea el método `unique()` o `nunique()` para reazalizar conteos.
 ```
 
-## WHERE
+## Where
 
 Se emplea para imponer filtros en la consulta.
 
@@ -70,7 +68,7 @@ Se emplean para encadenar condiciones dentro del dominio de `WHERE`.
 SELECT * FROM [personas] WHERE [nombre = 'Antonio'] AND [apellido1 = 'Perez']
 ```
 
-## ORDER BY
+## Order by
 
 Se hacen ordenamientos respecto a una columna. El ordenamiento por default es *ascendente*.
 
@@ -85,7 +83,7 @@ SELECT [nombre] FROM [personas] ORDER BY [edad] DESC
 Las columnas de tipo `string` se ordenan por orden alfabético si son utilizadas como criterio de ordenamiento.
 ```
 
-## INSERT INTO
+## Insert into
 
 Se emplea para incluir nuevas instancias en una tabla.
 
@@ -97,7 +95,7 @@ INSERT INTO [table_name] VALUES (5, 'Marta', 'Santos', 'Perez', 33)
 
 Siempre se deben agregar los datos de forma íntegra, respetando el tipado de cada columna.
 
-## UPDATE
+## Update
 
 ````{margin}
 ```{warning}
@@ -113,7 +111,7 @@ Cambia valores en lugar específicos de una tabla.
 UPDATE [table_name] SET [col1] = [val1] WHERE [col2] = [val2]
 ```
 
-## DELETE
+## Delete
 
 Elimina filas especificadas.
 
