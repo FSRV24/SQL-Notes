@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Curso completo de SQL &#8212; My sample book</title>
+    <title>Curso completo de SQL &#8212; Notas de SQL</title>
   
   
   
@@ -64,7 +64,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="🎭 SQL básico" href="1_basico.html" />
+    <link rel="next" title="1. SQL básico" href="1_basico.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -155,11 +155,15 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_basico.html">🎭 SQL básico</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_ejercicios_basico.html">Ejercicios: SQL básico</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_avanzado.html">🎭 SQL avanzado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_ejercicios_avanzado.html">Ejercicio: SQL avanzado</a></li>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">I. SQL básico</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="1_basico.html">1. SQL básico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_ejercicios_basico.html">2. Ejercicios</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">II. SQL avanzando</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="3_avanzado.html">1. SQL avanzado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_ejercicios_avanzado.html">2. Ejercicios</a></li>
 </ul>
 
     </div>
@@ -214,7 +218,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+      <li><a href="https://github.com/FSRV24/SQL-Notes" target="_blank"
    class="btn btn-sm btn-source-repository-button dropdown-item"
    title="Source repository"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -231,7 +235,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/FSRV24/SQL-Notes/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -330,7 +334,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -346,6 +352,18 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Curso completo de SQL</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contenidos">Contenidos</a><ul class="visible nav section-nav flex-column">
+</ul>
+</li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -357,14 +375,26 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="curso-completo-de-sql">
 <h1>Curso completo de SQL<a class="headerlink" href="#curso-completo-de-sql" title="Permalink to this heading">#</a></h1>
-<p>Las notas presentes forman parte de mi estudio del <strong>Curso Completo de SQL</strong>, creado por <em>Redait Media</em> en Udemy. Estos cursos forman parte de mi capacitación en <strong>INETUM</strong>.</p>
-<p>El curso se divide en dos secciones:</p>
-<ul class="simple">
-<li><p>SQL básico</p></li>
-<li><p>SQL avanzado</p></li>
-</ul>
-<p>Cada sección contiene ejercicios para practicar.</p>
+<p>¡Bienvenidos a mis notas del Curso Completo de SQL! Este compendio es el resultado de mi estudio y participación en el curso impartido por Redait Media en Udemy, como parte de mi capacitación en INETUM.</p>
+<p>A lo largo de este curso, he adquirido conocimientos prácticos fundamentales sobre SQL, el lenguaje de consulta estructurado utilizado para interactuar con bases de datos relacionales. Con un enfoque práctico y accesible, este curso me ha permitido aprender a realizar consultas generales y adentrarme en los conceptos esenciales del lenguaje.</p>
+<p>Es importante destacar que el contenido abordado en estas notas se centra principalmente en el nivel básico del curso, por lo que se enfoca en la ejecución de consultas y no profundiza en el diseño de bases de datos o teoría avanzada. No obstante, constituye una sólida base para comenzar a explorar las posibilidades de SQL y su aplicación práctica.</p>
+<p>Espero que estas notas sirvan como un recurso útil y accesible para aquellos interesados en iniciarse en el mundo del SQL o para aquellos que buscan consolidar sus conocimientos en este ámbito.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="contenidos">
+<h1>Contenidos<a class="headerlink" href="#contenidos" title="Permalink to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">I. SQL básico</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="1_basico.html">1. SQL básico</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_ejercicios_basico.html">2. Ejercicios</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">II. SQL avanzando</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="3_avanzado.html">1. SQL avanzado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_ejercicios_avanzado.html">2. Ejercicios</a></li>
+</ul>
 </div>
 </section>
 
@@ -404,7 +434,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">🎭 SQL básico</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>SQL básico</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -417,6 +447,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Curso completo de SQL</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contenidos">Contenidos</a><ul class="visible nav section-nav flex-column">
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>

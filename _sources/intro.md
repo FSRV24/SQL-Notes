@@ -1,10 +1,14 @@
 # Curso completo de SQL
 
-Las notas presentes forman parte de mi estudio del **Curso Completo de SQL**, creado por *Redait Media* en Udemy. Estos cursos forman parte de mi capacitación en **INETUM**.
+¡Bienvenidos a mis notas del Curso Completo de SQL! Este compendio es el resultado de mi estudio y participación en el curso impartido por Redait Media en Udemy, como parte de mi capacitación en INETUM.
 
-El curso se divide en dos secciones:
+A lo largo de este curso, he adquirido conocimientos prácticos fundamentales sobre SQL, el lenguaje de consulta estructurado utilizado para interactuar con bases de datos relacionales. Con un enfoque práctico y accesible, este curso me ha permitido aprender a realizar consultas generales y adentrarme en los conceptos esenciales del lenguaje.
 
-- SQL básico
-- SQL avanzado
+Es importante destacar que el contenido abordado en estas notas se centra principalmente en el nivel básico del curso, por lo que se enfoca en la ejecución de consultas y no profundiza en el diseño de bases de datos o teoría avanzada. No obstante, constituye una sólida base para comenzar a explorar las posibilidades de SQL y su aplicación práctica.
 
-Cada sección contiene ejercicios para practicar.
+Espero que estas notas sirvan como un recurso útil y accesible para aquellos interesados en iniciarse en el mundo del SQL o para aquellos que buscan consolidar sus conocimientos en este ámbito.
+
+# Contenidos
+
+```{tableofcontents}
+```
