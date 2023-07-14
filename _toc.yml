@@ -3,9 +3,16 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: 1_basico
-- file: 2_ejercicios_basico
-- file: 3_avanzado
-- file: 4_ejercicios_avanzado
 
+parts:
+- caption: I. SQL básico
+  numbered: true
+  chapters:
+  - file: 1_basico
+  - file: 2_ejercicios_basico
+  
+- caption: II. SQL avanzando
+  numbered: true
+  chapters:
+  - file: 3_avanzado
+  - file: 4_ejercicios_avanzado

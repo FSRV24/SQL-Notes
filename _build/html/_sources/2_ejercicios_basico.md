@@ -12,84 +12,90 @@ kernelspec:
   name: python3
 ---
 
-# Ejercicios: SQL básico
+# Ejercicios
 
-## 🔘 Ejercicio 1
+## Ejercicio 1
 
-Mostrar las columnas *NOMBRE*, *APELLIDO1*, *EDAD* y *DNI* de la tabla *PERSONAS* ordenadas por el *DNI* de menor a mayor y cuya edad sea superior a 40 años.
+Mostrar las columnas `NOMBRE`, `APELLIDO1`, `EDAD` y `DNI` de la tabla `PERSONAS` ordenadas por el `DNI` de menor a mayor y cuya edad sea superior a 40 años.
 
-**Solución.**
-
+````{admonition} Solución
+:class: dropdown
 ```sql
 SELECT nombre, apellido1, edad, dni FROM personas
 WHERE edad > 40
 ORDER BY dni ASC
 ```
+````
 
 ---
 
-## 🔘 Ejercicio 2
+## Ejercicio 2
 
-Mostrar todas las personas que se llaman *ANTONIO* o *PEDRO* ordenadas por edad.
+Mostrar todas las personas que se llaman `ANTONIO` o `PEDRO` ordenadas por edad.
 
-**Solución.**
-
+````{admonition} Solución
+:class: dropdown
 ```sql
 SELECT * FROM PERSONAS
 WHERE ((nombre = 'Pedro') OR (nombre = 'Antonio'))
 ORDER BY edad
 ```
+````
 
 ---
 
-## 🔘 Ejercicio 3
+## Ejercicio 3
 
 Insertar una nueva persona en la base de datos y verificar que se ha realizado con éxito realizando una consulta.
 
-**Solución.**
-
+````{admonition} Solución
+:class: dropdown
 ```sql
 INSERT INTO personas
 VALUES (5, 'Fernando', 'Santa Rita', 'Vizuet', 315268463, 23, 'CDMX', NULL)
 ```
+````
 
 ---
 
-## 🔘 Ejercicio 4
+## Ejercicio 4
 
 Actualizar el registro anteriormente creado porque Fernando tenía 24 años en lugar de 23.
 
-**Solución.**
-
+````{admonition} Solución
+:class: dropdown
 ```sql
 UPDATE personas
 SET edad = 24
 WHERE nombre = 'Fernando'
 ```
+````
 
 ---
 
-## 🔘 Ejercicio 5
+## Ejercicio 5
 
 Borrar el último registro actualizado realizando la selección por el nombre y los dos apellidos.
 
-**Solución.**
-
+````{admonition} Solución
+:class: dropdown
 ```sql
 DELETE FROM personas
 WHERE nombre = 'Fernando'
 AND apellido1 = 'Santa Rita'
 AND apellido2 = 'Vizuet'
 ```
+````
 
 ---
 
-## 🔘 Ejercicio 6
+## Ejercicio 6
 
 Seleccionar que tipo de productos hemos vendido
 
-**Solución.**
-
+````{admonition} Solución
+:class: dropdown
 ```sql
 SELECT DISTINCT producto FROM pedidos
 ```
+````

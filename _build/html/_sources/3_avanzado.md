@@ -12,9 +12,9 @@ kernelspec:
   name: python3
 ---
 
-# 🎭 SQL avanzado
+# SQL avanzado
 
-## 🔘 LIMIT
+## LIMIT
 
 Establece el número de filas a visualizar.
 
@@ -24,7 +24,7 @@ Establece el número de filas a visualizar.
 SELECT * FROM [table_name] LIMIT [no_filas]
 ```
 
-## 🔘 LIKE
+## LIKE
 
 Permite el uso de expresiones regulares.
 
@@ -41,7 +41,7 @@ SELECT * FROM [table_name] WHERE [column1] LIKE ['%CIA']
 SELECT * FROM [table_name] WHERE [column1] LIKE ['%CIA%']
 ```
 
-## 🔘 IN
+## IN
 
 Búsqueda en valores en listas.
 
@@ -51,7 +51,7 @@ Búsqueda en valores en listas.
 SELECT * FROM [table_name] WHERE [col] IN (val1, val2, ...)
 ```
 
-## 🔘 BETWEEN
+## BETWEEN
 
 Búsqueda en valores en intervalos.
 
@@ -62,7 +62,7 @@ SELECT * FROM [table_name]
 WHERE [column] BETWEEN [val1] AND [val2]
 ```
 
-## 🔘 ALIAS
+## ALIAS
 
 Renombra las columnas para su uso dentro del script o de la consulta, pero no es un cambio permanente.
 
@@ -72,7 +72,7 @@ Renombra las columnas para su uso dentro del script o de la consulta, pero no es
 SELECT [column1] AS [alias] FROM [table_name]
 ```
 
-## 🔘 JOIN
+## JOIN
 
 Permite concatenar tablas horizontalmente a través de atributos compartidos como llaves.
 
@@ -82,9 +82,9 @@ Permite concatenar tablas horizontalmente a través de atributos compartidos com
 SELECT * FROM [table1] JOIN [table2] WHERE table1.col = table2.col
 ```
 
-## 🔘 UNION
+## UNION
 
-Permite unir dos sentencias SELECT, donde los resultados se concatenan verticalmente, se requiere que haya el mismo número de columnas, en el mismo orden, y que cada columna sea del mismo tipo de dato.
+Permite unir dos sentencias `SELECT`, donde los resultados se concatenan verticalmente, se requiere que haya el mismo número de columnas, en el mismo orden, y que cada columna sea del mismo tipo de dato.
 
 **Sintaxis**
 
@@ -94,7 +94,7 @@ UNION
 SELECT * FROM [table_name] WHERE [column2] = [val]
 ```
 
-## 🔘 CREATE TABLE
+## CREATE TABLE
 
 Crea tablas dentro de la base de datos.
 
@@ -131,7 +131,7 @@ Se tienen los siguientes tipos de datos:
 - **Booleano:**
   - `BOOLEAN`: representa los valores verdadero (TRUE) y falso (FALSE).
 
-## 🔘 NOT NULL
+## NOT NULL
 
 En la creación de una tabla, establece que los valores de una columna no puede tener valores nulos.
 
@@ -151,7 +151,7 @@ SELECT * FROM [table_name] WHERE [column] IS NULL
 SELECT * FROM [table_name] WHERE [column] IS NOT NULL
 ```
 
-## 🔘 UNIQUE
+## UNIQUE
 
 En la creación de una tabla, establece que los valores en una columna no pueden repetirse.
 
@@ -199,7 +199,7 @@ CREATE TABLE table_name (
 
 La columna `column_name` hace referencia a una de las columnas de la tabla que está siendo creada, no significa que en la misma línea se esté creando una nueva variable.
 
-## 🔘 CHECK
+## CHECK
 
 Establece restricciones en los campos de una tabla al crear una tabla.
 
@@ -216,7 +216,7 @@ CREATE TABLE [table_name] (
 
 Hasta ahora, las condiciones `CHECK` solo establecen comparaciones entre valores numéricos.
 
-## 🔘 CREATE INDEX
+## CREATE INDEX
 
 Se crea un índice hash dada cierta columna. Devuelve resultados de búsqueda de forma instantanea, con complejidad $O(1)$, pero es recomdable hacerlo con parámetros de búsqueda como identificadores o llaves primarias.
 
@@ -226,7 +226,7 @@ Se crea un índice hash dada cierta columna. Devuelve resultados de búsqueda de
 CREATE INDEX [index_name] ON [table_name] (column1, column2, ...);
 ```
 
-## 🔘 DROP
+## DROP
 
 Sirve para eliminar tablas, índices o una base de datos.
 
@@ -237,7 +237,7 @@ DROP INDEX [index_name]
 DROP TABLE [table_name]
 ```
 
-## 🔘 TRUNCATE
+## TRUNCATE
 
 Elimina los datos pero no la estructura de la tabla.
 
@@ -247,7 +247,7 @@ Elimina los datos pero no la estructura de la tabla.
 TRUNCATE TABLE [table_name]
 ```
 
-## 🔘 ALTER
+## ALTER
 
 Añade, elimina, o modifica columnas de una tabla.
 
@@ -282,7 +282,7 @@ Las constricciones que maneja SQL son:
 Todas estas pueden ser modificadas después de la creación de la tabla.
 ```
 
-## 🔘 AUTOINCREMENT
+## AUTOINCREMENT
 
 Genera números únicos de forma automática y secuencial en la creación de una tabla.
 
@@ -306,7 +306,7 @@ CREATE TABLE [table_name] (
 Al momento de agregar nuevas instancias, ignoramos el lugar del campo incremental y se añade el resto de campos.
 
 
-## 🔘 CREATE VIEW
+## CREATE VIEW
 
 Crea una tabla temporal, subconjunto de otra tabla.
 
@@ -323,7 +323,7 @@ WHERE [condition]
 DROP VIEW [name_view]
 ```
 
-## 🔘 Funciones de agregación
+## Funciones de agregación
 
 Aplica funciones de agregación sobre el atributo indicado.
 
@@ -338,12 +338,12 @@ Las funciones de agregación pueden ser:
 - `COUNT`
 - `MAX`
 - `MIN`
-- 
+
 ```{tip}
 La función de agregación `COUNT` suele ser combinada con el statement `WHERE`, para contabilizar registros que cumplan cierta condición.
 ```
 
-## 🔘 CURRENT TIME, CURRENT DATE
+## CURRENT TIME, CURRENT DATE
 
 Permite obtener la hora independiente a cualquier tabla en la base de datos.
 
